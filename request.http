@@ -1,0 +1,27 @@
+POST http://localhost:3000/products
+content-type: application/json
+
+{
+    "name": "Caderno de Desenho",
+    "price": 25
+}
+
+###
+
+GET http://localhost:3000/products
+//Passando /id no final é possivel pegar o produto desejato na lista
+###
+
+PUT http://localhost:3000/products/03103b92-ca48-43d5-8ecc-38eb3201bbc1
+content-type: application/JSON
+
+{
+    "name": "Caderno",
+    "price": 25
+}
+
+###
+
+DELETE http://localhost:3000/products/
+//passar o /id no final para deletar
+###
